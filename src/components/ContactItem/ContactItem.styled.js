@@ -11,5 +11,14 @@ export const ButtonDel = styled.button`
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: red;
+
+  &:hover,
+  :focus {
+    background-color: red;
+    color: #f4f6f9;
+  }
+`;
+
+export const Phone = styled.span`
+  margin-left: 70px;
 `;

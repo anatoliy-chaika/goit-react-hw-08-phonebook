@@ -5,7 +5,13 @@ export const GlobalStyles = props => (
   <Global
     {...props}
     styles={css`
+      html {
+        height: 100%;
+      }
       body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
           'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
@@ -13,6 +19,10 @@ export const GlobalStyles = props => (
         line-height: 1.5;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+      }
+
+      main {
+        flex-grow: 1;
       }
 
       code {

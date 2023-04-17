@@ -1,18 +1,18 @@
 import styled from '@emotion/styled';
 
-import {
-  Form as FormikForm,
-  Field as FormikField,
-  ErrorMessage as FormikError,
-} from 'formik';
-
-export const Form = styled(FormikForm)`
+export const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 20px;
 `;
 
-export const Field = styled(FormikField)`
+export const Lable = styled.label`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+`;
+
+export const Input = styled.input`
   width: 200px;
   border-radius: 5px;
   border: 1px solid #cfcfd0;
@@ -24,18 +24,7 @@ export const Field = styled(FormikField)`
   }
 `;
 
-export const ErrorMessage = styled(FormikError)`
-  color: red;
-`;
-
-export const FormLable = styled.label`
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-`;
-
 export const ButtonSubmit = styled.button`
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,7 +33,6 @@ export const ButtonSubmit = styled.button`
   border: 1px solid #cfcfd0;
   border-radius: 5px;
   padding: 2px 6px;
-  margin-bottom: 20px;
   &:hover,
   :focus {
     background-color: #7fadf7;

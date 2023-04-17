@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'components/redux/operations';
-import { selectContacts } from 'components/redux/selectors';
+import { addContact } from 'components/redux/contacts/operations';
+import { selectContacts } from 'components/redux/contacts/selectors';
 import Notiflix from 'notiflix';
 
 import PropTypes from 'prop-types';
@@ -44,7 +44,7 @@ export const ContactForm = () => {
       Notiflix.Report.failure(`${values.name}: is already in your contacts`);
       return;
     }
-    dispatch(addContact({ name: values.name, phone: values.number }));
+    dispatch(addContact({ name: values.name, number: values.number }));
   };
 
   return (

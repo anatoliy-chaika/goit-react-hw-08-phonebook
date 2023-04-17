@@ -15,4 +15,5 @@ export const FilterLabel = styled.label`
   flex-direction: column;
   gap: 12px;
   width: 200px;
+  margin-bottom: 20px;
 `;
